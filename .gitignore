@@ -1,0 +1,14 @@
+logs/
+bin/
+dist/
+build/
+target/
+deplyitpackage/
+.gradle
+.idea
+.classpath
+.project
+.settings
+.springBeans
+.mvn
+*.iml

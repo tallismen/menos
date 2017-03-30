@@ -1,0 +1,33 @@
+// WWi Alert SVD, chapter 2, Gerealiseerd.
+
+== Gerealiseerd
+
+=== Inleiding
+
+Dit hoofdstuk beschrijft kort welke functionele en niet-functionele
+wijzigingen in elke release zijn gerealiseerd.
+
+=== Gerealiseerd in Menos 1.0
+
+==== Gerealiseerd in Menos 1.1.0.0
+
+.Story
+* [DISSCRUM-2698] - Geluidsopname maken vanaf noodmelding
+
+
+==== Gerealiseerd in Menos 1.0.0.1
+
+.Story
+* Spring Actuator toegevoegd t.b.v. `/info` en `/health` URLs
+
+==== Gerealiseerd in Menos 1.0.0.0
+
+.Story
+* [DISSCRUM-2695] - Noodmelding versturen
+* [DISSCRUM-2697] - Noodmelding versturen in ontwikkelomgeving
+
+.Bug
+* [DISSCRUM-2845] - Bevindingen Menos review implementeren
+
+
+<<<

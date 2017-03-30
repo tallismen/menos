@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<configuration scan="true">
+
+  <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>%d{ISO8601}|%-5p|%-20.20t|%-32.32c{32}| %X%m%n</pattern>
+    </encoder>
+    <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+      <level>INFO</level>
+    </filter>
+  </appender>
+
+  <!--
+    - Appender that logs to a rolling file.
+    - For date pattern use a simple date pattern as follows:
+    - rollover at first day each week "'.'yyyy-ww"
+    - rollover at midnight "'.'yyyy-MM-dd"
+    - rollover at each hour "'.'yyyy-MM-dd-HH"
+  -->
+  <appender name="ROLLING_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <Append>true</Append>
+    <File>{{MENOS_LogFile}}</File>
+    <encoder>
+      <pattern>%d{ISO8601}|%-5p|%-20.20t|%-32.32c{32}| %X%m%n</pattern>
+    </encoder>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <fileNamePattern>{{MENOS_LogFile}}.%d{yyyy-MM-dd}.gz</fileNamePattern>
+      <maxHistory>14</maxHistory>
+    </rollingPolicy>
+  </appender>
+
+  <root level="{{MENOS_LogLevel}}">
+    <appender-ref ref="ROLLING_FILE" />
+  </root>
+</configuration>

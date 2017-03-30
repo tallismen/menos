@@ -1,0 +1,20 @@
+// WWi Alert SVD, chapter 1, Kader.
+
+== Kader
+
+=== Identificatie
+
+Dit document beschrijft de versie informatie voor het systeem Menos
+{docVersion}.
+
+=== Bron
+
+[cols="1,3"]
+|===
+|Type|Info
+
+|Broncode|Git op {scmUrl}
+|Tag|Menos-{docVersion}
+|===
+
+<<<

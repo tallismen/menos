@@ -1,0 +1,19 @@
+// Menos SVD main adoc document. Includes the chapter adocs.
+
+// Header (v0 is automagically replaced by the value of docVersion, and
+// 0-0-0000 by that of docDate, both of which are set in pom.xml).
+= Menoa SVD
+DisScrum Team
+v0, 0-0-0000
+:doctype: book
+:toc:
+:lang: nl
+:sectlinks:
+:revnumber: {docVersion}
+:revdate: {docDate}
+
+Organisation: ANWB
+
+include::ch00_preface.adoc[]
+include::ch01_kader.adoc[]
+include::ch02_gerealiseerd.adoc[]
